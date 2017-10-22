@@ -108,7 +108,8 @@
 -type cb_return() ::
 	{ok, mod_state()}
       | {ok, msg(), mod_state()}
-      | {stop, reason, mod_state()}.
+      | {stop, reason, mod_state()}
+      | {noreply, mod_state()}.
 -type cb_reply() ::
 	{reply, reply(), mod_state()}
       | {reply, reply(), msg(), mod_state()}
